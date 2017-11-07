@@ -31,6 +31,6 @@ public class CityTest {
 
     @Test
     public void canGetRank() throws Exception {
-        assertEquals(1, city1.getRanking());
+        assertEquals((Integer)1, city1.getRanking());
     }
 }

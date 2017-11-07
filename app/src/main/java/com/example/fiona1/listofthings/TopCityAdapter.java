@@ -2,18 +2,21 @@ package com.example.fiona1.listofthings;
 
 import android.content.Context;
 import android.graphics.Movie;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 import static android.R.attr.name;
 import static android.R.attr.resource;
+import static com.example.fiona1.listofthings.R.drawable.flag1;
 
 /**
  * Created by Fiona1 on 07/11/2017.
@@ -40,10 +43,27 @@ public class TopCityAdapter extends ArrayAdapter<City> {
         TextView country = (TextView)listItemView.findViewById(R.id.textCountry);
         country.setText(currentCity.getCountry().toString());
 
+        ImageView imageView = (ImageView) listItemView.findViewById(R.id.imageCity);
+
+        String imagename = currentCity.getIconName();
+
+        imageView.setImageResource(flag1);
+
+
+
+
+
+
+
+
         listItemView.setTag(currentCity);
+
+
 
         return listItemView;
 
 
     }
+
+
 }
