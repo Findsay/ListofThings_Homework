@@ -24,7 +24,7 @@ public class City {
         return country;
     }
 
-    public int getRanking() {
+    public Integer getRanking() {
         return ranking;
     }
 }
