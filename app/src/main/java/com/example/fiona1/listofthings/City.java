@@ -10,16 +10,16 @@ import android.media.Image;
 
 public class City {
 
-    private String iconName;
+    private int icon;
     private String name;
     private String country;
     private int ranking;
 
-    public City(String name, String country, int ranking, String iconName) {
+    public City(String name, String country, int ranking, int icon) {
         this.name = name;
         this.country = country;
         this.ranking = ranking;
-        this.iconName = iconName;
+        this.icon = icon;
     }
 
     public String getName() {
@@ -34,7 +34,7 @@ public class City {
         return ranking;
     }
 
-    public String getIconName() {
-        return iconName;
+    public int getIcon() {
+        return icon;
     }
 }

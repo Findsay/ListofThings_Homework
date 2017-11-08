@@ -45,15 +45,9 @@ public class TopCityAdapter extends ArrayAdapter<City> {
 
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.imageCity);
 
-        String imagename = currentCity.getIconName();
+        int image = currentCity.getIcon();
 
-        imageView.setImageResource(flag1);
-
-
-
-
-
-
+        imageView.setImageResource(image);
 
 
         listItemView.setTag(currentCity);

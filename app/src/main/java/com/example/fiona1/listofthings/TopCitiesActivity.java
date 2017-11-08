@@ -21,7 +21,5 @@ public class TopCitiesActivity extends AppCompatActivity {
         ListView listView = (ListView)findViewById(R.id.cityList);
         listView.setAdapter(cityAdapter);
 
-
-
     }
 }
